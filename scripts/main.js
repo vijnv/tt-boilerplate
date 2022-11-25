@@ -5,8 +5,10 @@ import '../styles/style.css'
 import * as d3 from 'd3';
 import count from './count.js';
 
-console.log('Hello, world!');
+console.log('Hello, class!');
 
 let data = count(5, 5);
 
 console.log(data);
+
+d3.select('body').insert('p', 'img').text(`Data: ${data}`);
